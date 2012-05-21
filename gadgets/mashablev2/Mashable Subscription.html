@@ -1,0 +1,340 @@
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="http://latesthack.googlecode.com/svn/colorpicker.css" media="all" />
+
+
+<script type='text/javascript'src='http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js?ver=1.7.1'></script> 
+
+
+<script type="text/javascript" src="http://latesthack.googlecode.com/svn/jqueryvalidationengine.js"></script>
+
+
+<script type="text/javascript" src="http://latesthack.googlecode.com/svn/colorpicker.js"></script>
+
+
+<script type="text/javascript" src="http://latesthack.googlecode.com/svn/colorpickerwidget.js"></script>
+<title>Mashable Style Social Subscription Widget Generator</title>
+<style type="text/css">
+#dhi { width: 95%; max-widtd:980px;  margin: 0 auto;  padding: 5px;  text-align: left;  background-color: #ffffff;
+
+border:2px solid #336699;
+
+-webkit-border-radius: 20px;-moz-border-radius: 20px;border-radius: 20px;
+
+}
+.text-input, .select-box{
+
+	margin:0 2px;
+
+	padding:4px 6px;
+
+	border: 1px solid #336699;
+
+
+
+	-webkit-border-radius: 4px;
+
+	-moz-border-radius: 4px;
+
+	border-radius: 4px;
+
+	font-family: gergia;
+
+	font-style: italic;
+
+
+
+	-webkit-box-shadow: 1px 1px 1px #336699;
+
+	-moz-box-shadow: 1px 1px 1px #336699;
+
+	box-shadow: 1px 1px 1px #336699;
+
+	font-size: 14px;
+
+	color: #666;
+
+	max-width:auto;
+
+}
+label       { font-family: Verdana, Arial;margin: 0;padding: 0;text-align: left;font-size:15px; font-weight:bold; }
+
+
+			.redi{-moz-border-radius: 8px; -webkit-border-radius: 8px; border-radius: 8px; }
+		</style>
+<script type="text/javascript">
+function latesthackcodegen() {
+    var latesthacknitFurl = document.getElementsByName("latesthackfurl")[0].value;
+    var latesthackFurl = latesthacknitFurl.replace(/\s/gi, "");
+    var latesthackEFurl = encodeURIComponent(latesthackFurl);
+    var latesthackblogurl = document.getElementsByName("blogurl")[0].value;
+    var latesthackwidth = document.getElementsByName("width")[0].value;
+    var gpid = document.getElementsByName("latesthackgpid")[0].value;
+    var latesthackbg1 = document.getElementsByName("bg1")[0].value;
+    var latesthackbg2 = document.getElementsByName("bg2")[0].value;
+    var latesthackbg27 = document.getElementsByName("bg27")[0].value;
+    var latesthackbg28 = document.getElementsByName("bg28")[0].value;
+    var latesthack111 = document.getElementsByName("latesthacks111")[0].value;
+    var latesturl1 = document.getElementsByName("latestur1")[0].value;
+    var latesturl2 = document.getElementsByName("latestur2")[0].value;
+    var latesturl3 = document.getElementsByName("latestur3")[0].value;
+    var latesturl11 = document.getElementsByName("latestur11")[0].value;
+    var latesturl12 = document.getElementsByName("latestur12")[0].value;
+    var latesturl13 = document.getElementsByName("latestur13")[0].value;
+    var pinusername = document.getElementsByName("piusername")[0].value;
+    var twusername = document.getElementsByName("tusername")[0].value;
+    var latesthackbg3 = document.getElementsByName("bg3")[0].value;
+    var latesthackfeedid = document.getElementsByName("feedid")[0].value;
+    var latesthackbuttonstyle = document.getElementsByName("latesthackbutton")[0].value;
+    var latesthackbg4 = document.getElementsByName("bg4")[0].value;
+    var latesthackbg5 = document.getElementsByName("bg5")[0].value;
+    var widget = document.getElementsByName("widget.content")[0];
+    widget.value = "<style type=\"text\/css\">";
+    widget.value += "\/*<!CDATA[*\/";
+    widget.value += "#latesthack-mashable{width:" + latesthackwidth + "px;margin:auto;padding:0;}";
+    widget.value += ".latesthack-googleplus {height: 57px;}";
+    widget.value += ".fb-likebox {background:#" + latesthackbg1 + ";border: 1px solid #DCDCDC;margin-top: -2px;padding: 10px 13px 0 10px;height:70px;}";
+    widget.value += ".latesthack-gplusone {background-color: #" + latesthackbg2 + ";border: 1px solid #d8e6eb;border-top: 1px solid white;font-size: .87em;color: black;padding: 9px 0 0 11px;line-height: 24px;height:30px;}";
+    widget.value += ".latesthack-gplusone span {display: inline-block;vertical-align: middle;height: 20px;margin-top: -17px;font-size: 11px;font-family: \"Arial\",\"Helvetica\",sans-serif;}";
+    widget.value += ".latesthack-pinterest {background-color: #" + latesthackbg27 + ";border: 1px solid #d8e6eb;border-top: 1px solid white;font-size: .87em;color: black;padding: 9px 0 0 11px;line-height: 24px;height:30px;}";
+    widget.value += ".latesthack-twitter {background-color: #" + latesthackbg3 + ";border: 1px solid #c7dbe2;border-top: 0;}";
+    widget.value += ".latesthack-twitter a.twitter-follow-button {display: block;}";
+    widget.value += ".latesthack-twitter iframe {margin: 9px 11px;}";
+    widget.value += ".latesthack-sociallinks {background-color: #" + latesthackbg5 + ";border: 1px solid #b6d0da;border-top: 1px solid #eff5f7;padding: 10px 11px;overflow: hidden;}";
+    widget.value += ".latesthack-sociallinks a {text-shadow: 1px 1px white;}";
+    widget.value += ".latesthack-sociallinks .latesthack-social {list-style: none;overflow: hidden;margin: 0 !important;padding: 0 !important;}";
+    widget.value += ".latesthack-sociallinks .latesthack-social li {border:0 none !important;float: left;line-height: 1;padding: 2px 0 4px 20px !important;margin-bottom: 3px;width: 70px;background: url(http:\/\/2.bp.blogspot.com\/-AfQpJgImvzw\/T7oLznzFN0I\/AAAAAAAAA90\/-0htmrw5vmk\/s1600\/latesthack.com.png) no-repeat;font-size: 12px;}";
+    widget.value += ".latesthack-sociallinks .latesthack-social li a {display: block;font-weight: bold;color: #1E598E;text-decoration: none;text-shadow: 1px 1px 1px #fff;}";
+    widget.value += ".latesthack-sociallinks .latesthack-social li a:hover {text-decoration: underline;}";
+    widget.value += ".latesthack-sociallinks .latesthack-social li.Facebook {background-position: 0 -450px !important;}";
+    widget.value += ".latesthack-sociallinks .latesthack-social li.Pinterest {background-position: 0 -489px !important;}";
+    widget.value += ".latesthack-sociallinks .latesthack-social li.Google Plus {background-position: 0 0 !important;}";
+    widget.value += ".latesthack-sociallinks .latesthack-social li.Twitter {background-position: 0 -150px !important;}";
+    widget.value += ".latesthack-sociallinks .latesthack-social li.Rss {background-position: 0 -240px !important;}";
+    widget.value += ".latesthack-sociallinks .latesthack-social li.Stumbleupon {background-position: 0 -210px !important;}";
+    widget.value += ".latesthack-sociallinks .latesthack-social li.Youtube {background-position: 0 -90px !important;}";
+    widget.value += ".latesthack-sociallinks .latesthack-social li.Delicious {background-position: 0 -60px !important;}";
+    widget.value += "#email-news-subscribe{background:#" + latesthackbg4 + "}#email-news-subscribe .email-box{padding:5px 10px;font-family:\"Arial\",\"Helvetica\",sans-serif;border-top:0;border-right:1px solid #C7DBE2;border-left:1px solid #C7DBE2;border-image:initial;height:35px;}#email-news-subscribe .email-box input.email{background:#fff;border:1px solid #dedede;color:#999;padding:7px 10px 8px 10px;\/*border-radius*\/-webkit-border-radius:3px;-moz-border-radius:3px;border-radius:3px;border-image:initial;font-family:\"Arial\",\"Helvetica\",sans-serif;}#email-news-subscribe .email-box input.email:focus{color:#333;}#email-news-subscribe .email-box input.submitu {-webkit-border-radius: 3px;-moz-border-radius: 3px;border-radius: 3px;color: white;padding: 7px 14px;font-weight: bold;font-size: 12px;float: right;cursor: pointer;}.latesthack-emailbox input.submitu:hover {text-decoration: none;}";
+    widget.value += ".latesthackDefault {border: 1px solid #cc7c00;text-shadow: #d08d00 1px 1px 0;background-color: #ff9b00;background: -webkit-gradient(linear,left top,left bottom,color-stop(0,#ffca00),color-stop(1,#ff9b00));background: -webkit-linear-gradient(center top,#ffca00 0,#ff9b00 100%);background: -moz-linear-gradient(center top,#ffca00 0,#ff9b00 100%);background: -o-linear-gradient(center top,#ffca00 0,#ff9b00 100%);background: -ms-linear-gradient(center top,#ffca00 0,#ff9b00 100%);background: linear-gradient(center top,#ffca00 0,#ff9b00 100%);}";
+    widget.value += ".latesthackDefault:hover {background-color: #ff9b00;background: -webkit-gradient(linear,left top,left bottom,color-stop(0,#ffe480),color-stop(1,#ff9b00));background: -webkit-linear-gradient(center top,#ffe480 0,#ff9b00 100%);background: -moz-linear-gradient(center top,#ffe480 0,#ff9b00 100%);background: -o-linear-gradient(center top,#ffe480 0,#ff9b00 100%);background: -ms-linear-gradient(center top,#ffe480 0,#ff9b00 100%);background: linear-gradient(center top,#ffe480 0,#ff9b00 100%);}.latesthack-moresubs {background: none repeat scroll 0 0 #" + latesthackbg28 + ";border-style: solid;border-width: 1px;border-color: #fff #ccc #ccc;padding: 3px 8px 3px 3px;text-align: right;font-size: 7px;letter-spacing: 1px;}";
+    widget.value += ".latesthack-moresubs a {display: inline-block;font-weight: bold;color: #1E598E;text-decoration: none;text-shadow: 1px 1px 1px #fff;}";
+    widget.value += ".latesthackRed {border: 1px solid #A0350E;text-shadow: #A0350E 1px 1px 0;background: #ed7347;background: -webkit-linear-gradient(top, #ed7347 0%, #c63800 100%);background: -moz-linear-gradient(top, #ed7347 0%, #c63800 100%);background: -o-linear-gradient(top, #ed7347 0%, #c63800 100%);background: -ms-linear-gradient(top, #ed7347 0%, #c63800 100%);background: linear-gradient(top, #ed7347 0%, #c63800 100%);filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ed7347', endColorstr='#c63800',GradientType=0 );}.latesthackRed:hover{background: #ed9476;background: -moz-linear-gradient(top, #ed9476 0%, #d14410 100%);background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ed9476), color-stop(100%,#d14410));background: -webkit-linear-gradient(top, #ed9476 0%,#d14410 100%);background: -o-linear-gradient(top, #ed9476 0%,#d14410 100%);background: -ms-linear-gradient(top, #ed9476 0%,#d14410 100%);background: linear-gradient(top, #ed9476 0%,#d14410 100%);filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ed9476', endColorstr='#d14410',GradientType=0 );}.latesthackBlue{border:1px solid #397CBA;text-shadow: 1px 1px 0 #3A7AB2;background: #60abf8;background: -moz-linear-gradient(top, #60abf8 0%, #4082c4 100%);background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#60abf8), color-stop(100%,#4082c4));background: -webkit-linear-gradient(top, #60abf8 0%,#4082c4 100%);background: -o-linear-gradient(top, #60abf8 0%,#4082c4 100%);background: -ms-linear-gradient(top, #60abf8 0%,#4082c4 100%);background: linear-gradient(top, #60abf8 0%,#4082c4 100%);filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#60abf8', endColorstr='#4082c4',GradientType=0 );}.latesthackBlue:hover{background: #9ccefc;background: -moz-linear-gradient(top, #9ccefc 0%, #5087bf 100%);background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#9ccefc), color-stop(100%,#5087bf));background: -webkit-linear-gradient(top, #9ccefc 0%,#5087bf 100%);background: -o-linear-gradient(top, #9ccefc 0%,#5087bf 100%);background: -ms-linear-gradient(top, #9ccefc 0%,#5087bf 100%);background: linear-gradient(top, #9ccefc 0%,#5087bf 100%);filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#9ccefc', endColorstr='#5087bf',GradientType=0 );}.latesthackGray{color:#444 !important;border:1px solid #CCC;text-shadow:0 1px 0 #fff;background: #dbdbdb;background: -moz-linear-gradient(top, #dbdbdb 0%, #bbbbbb 100%);background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#dbdbdb), color-stop(100%,#bbbbbb));background: -webkit-linear-gradient(top, #dbdbdb 0%,#bbbbbb 100%);background: -o-linear-gradient(top, #dbdbdb 0%,#bbbbbb 100%);background: -ms-linear-gradient(top, #dbdbdb 0%,#bbbbbb 100%);background: linear-gradient(top, #dbdbdb 0%,#bbbbbb 100%);filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#dbdbdb', endColorstr='#bbbbbb',GradientType=0 );}.latesthackGray:hover{background: #e6e6e6;background: -moz-linear-gradient(top, #e6e6e6 0%, #bbbbbb 100%);background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#e6e6e6), color-stop(100%,#bbbbbb));background: -webkit-linear-gradient(top, #e6e6e6 0%,#bbbbbb 100%);background: -o-linear-gradient(top, #e6e6e6 0%,#bbbbbb 100%);background: -ms-linear-gradient(top, #e6e6e6 0%,#bbbbbb 100%);background: linear-gradient(top, #e6e6e6 0%,#bbbbbb 100%);filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e6e6e6', endColorstr='#bbbbbb',GradientType=0 );}.latesthackPurple{border:1px solid #6736D1 ;text-shadow:1px 1px 0 #602DCE;background: #9b76e0;background: -moz-linear-gradient(top, #9b76e0 0%, #6933d6 100%);background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#9b76e0), color-stop(100%,#6933d6));background: -webkit-linear-gradient(top, #9b76e0 0%,#6933d6 100%);background: -o-linear-gradient(top, #9b76e0 0%,#6933d6 100%);background: -ms-linear-gradient(top, #9b76e0 0%,#6933d6 100%);background: linear-gradient(top, #9b76e0 0%,#6933d6 100%);filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#9b76e0', endColorstr='#6933d6',GradientType=0 );}.latesthackPurple:hover{background: #b093ea;background: -moz-linear-gradient(top, #b093ea 0%, #6933d6 100%);background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#b093ea), color-stop(100%,#6933d6));background: -webkit-linear-gradient(top, #b093ea 0%,#6933d6 100%);background: -o-linear-gradient(top, #b093ea 0%,#6933d6 100%);background: -ms-linear-gradient(top, #b093ea 0%,#6933d6 100%);background: linear-gradient(top, #b093ea 0%,#6933d6 100%);filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b093ea', endColorstr='#6933d6',GradientType=0 );}.latesthackOrange{border:1px solid #E08121 ;text-shadow:1px 1px 0 #E08121;background: #f79d4a;background: -moz-linear-gradient(top, #f79d4a 0%, #ef871f 100%);background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f79d4a), color-stop(100%,#ef871f));background: -webkit-linear-gradient(top, #f79d4a 0%,#ef871f 100%);background: -o-linear-gradient(top, #f79d4a 0%,#ef871f 100%);background: -ms-linear-gradient(top, #f79d4a 0%,#ef871f 100%);background: linear-gradient(top, #f79d4a 0%,#ef871f 100%);filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f79d4a', endColorstr='#ef871f',GradientType=0 );}";
+    widget.value += ".latesthackOrange:hover{background: #f4b67c;background: -moz-linear-gradient(top, #f4b67c 0%, #ef871f 100%);background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f4b67c), color-stop(100%,#ef871f));background: -webkit-linear-gradient(top, #f4b67c 0%,#ef871f 100%);background: -o-linear-gradient(top, #f4b67c 0%,#ef871f 100%);background: -ms-linear-gradient(top, #f4b67c 0%,#ef871f 100%);background: linear-gradient(top, #f4b67c 0%,#ef871f 100%);filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f4b67c', endColorstr='#ef871f',GradientType=0 );}";
+    widget.value += "\/*]]>*\/";
+    widget.value += "<\/style>";
+    widget.value += "    <div id=\"latesthack-mashable\">";
+    widget.value += "	<div class=\"latesthack-googleplus\">";
+    widget.value += "	    <script type=\"text\/javascript\">";
+    widget.value += "		\/*<![CDATA[*\/";
+    widget.value += "		window.___gcfg = {lang: 'en'};";
+    widget.value += "		(function(){";
+    widget.value += "		    var po = document.createElement(\"script\");";
+    widget.value += "		    po.type = \"text\/javascript\"; po.async = true;po.src = \"https:\/\/apis.google.com\/js\/plusone.js\";";
+    widget.value += "		    var s = document.getElementsByTagName(\"script\")[0];";
+    widget.value += "		    s.parentNode.insertBefore(po, s);";
+    widget.value += "		})();";
+    widget.value += "		\/*]]>*\/";
+    widget.value += "	    <\/script>";
+    widget.value += "	    <div class=\"g-plus\" data-href=\"https:\/\/plus.google.com\/" + gpid + "\" data-width=\"" + latesthackwidth + "\" data-height=\"69\" data-theme=\"light\"><\/div>";
+    widget.value += "	<\/div>";
+    widget.value += "	<div class=\"fb-likebox\"><div id=\"fb-root\"><\/div>";
+    widget.value += "  <script>(function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(d.getElementById(id))return;js=d.createElement(s);js.id=id;js.src=\"\/\/connect.facebook.net\/en_US\/all.js#xfbml=1\";fjs.parentNode.insertBefore(js,fjs);}(document,'script','facebook-jssdk'));<\/script>";
+    widget.value += " <div class=\"fb-like-box\" data-href=\"" + latesthackEFurl + "\" data-width=\"292\" data-show-faces=\"false\" data-stream=\"false\" data-header=\"false\"><\/div><\/div>";
+    widget.value += "	<div class=\"latesthack-gplusone\">";
+    widget.value += "	    <script type=\"text\/javascript\">\/*<![CDATA[*\/";
+    widget.value += "	      (function() {";
+    widget.value += "		var po = document.createElement(\"script\"); po.type = \"text\/javascript\"; po.async = true;";
+    widget.value += "		po.src = \"https:\/\/apis.google.com\/js\/plusone.js\";";
+    widget.value += "		var s = document.getElementsByTagName(\"script\")[0]; s.parentNode.insertBefore(po, s);";
+    widget.value += "	      })();\/*]]>*\/";
+    widget.value += "	    <\/script>";
+    widget.value += "	    <div class=\"g-plusone\" data-size=\"medium\" data-href=\"" + latesthackblogurl + "\"><\/div>";
+    widget.value += "	    <span>Recommend on Google<\/span>";
+    widget.value += "	<\/div>";
+    widget.value += "<div class=\"latesthack-pinterest\"><a href=\"" + pinusername + "\" rel=\"nofollow\" target=\"_blank\"><img src=\"http:\/\/3.bp.blogspot.com\/-RE2X2N4N1rY\/T7ZArL3C1mI\/AAAAAAAAA6c\/a1F6TeNZ5as\/s320\/follow-on-pinterest-button.png\" width=\"156\" height=\"26\" alt=\"Follow Me on Pinterest\" \/><\/a><\/div>";
+    widget.value += "	<div class=\"latesthack-twitter\">";
+    widget.value += "";
+    widget.value += "	    <a href=\"https:\/\/twitter.com\/" + twusername + "\" class=\"twitter-follow-button\" data-show-count=\"true\">Follow @nitinmaheta<\/a>";
+    widget.value += "";
+    widget.value += "	    <script type=\"text\/javascript\">\/*<![CDATA[*\/!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=\"\/\/platform.twitter.com\/widgets.js\";fjs.parentNode.insertBefore(js,fjs);}}(document,\"script\",\"twitter-wjs\");\/*]]>*\/<\/script>";
+    widget.value += "	<\/div>";
+    widget.value += "<div id=\"email-news-subscribe\"><div class=\"email-box\"><form onsubmit=\"window.open('http:\/\/feedburner.google.com\/fb\/a\/mailverify?uri=" + latesthackfeedid + "', 'popupwindow', 'scrollbars=yes,width=550,height=520');return true\" target=\"popupwindow\" method=\"post\" action=\"http:\/\/feedburner.google.com\/fb\/a\/mailverify\"><input type=\"text\" onblur=\"if(this.value=='')this.value=this.defaultValue;\" onfocus=\"if(this.value==this.defaultValue)this.value='';\" value=\"Enter Your Email here..\" name=\"email\" id=\"email\" style=\"width: 150px; font-size: 12px;\" class=\"email\"\/><input type=\"hidden\" name=\"uri\" value=\"" + latesthackfeedid + "\"\/><input type=\"hidden\" value=\"en_US\" name=\"loc\"\/><input class=\"submitu latesthack" + latesthackbuttonstyle + "\" type=\"submit\" value=\"Subscribe\"\/> <\/form><\/div> <\/div>";
+    widget.value += "";
+    widget.value += "	<div class=\"latesthack-sociallinks\">";
+    widget.value += "	    <ul class=\"latesthack-social\">";
+    widget.value += "		<li class=\"" + latesturl1 + "\"><a href=\"" + latesturl11 + "\" rel=\"nofollow\" target=\"_blank\">" + latesturl1 + "<\/a><\/li>";
+    widget.value += "";
+    widget.value += "		<li class=\"" + latesturl2 + "\"><a href=\"" + latesturl12 + "\" rel=\"nofollow\" target=\"_blank\">" + latesturl2 + "<\/a><\/li>";
+    widget.value += "";
+    widget.value += "		<li class=\"" + latesturl3 + "\"><a href=\"" + latesturl13 + "\" rel=\"nofollow\" target=\"_blank\">" + latesturl3 + "<\/a><\/li>";
+    widget.value += "";
+    widget.value += "	    <\/ul>";
+    widget.value += "	<\/div>";
+    widget.value += "	<div class=\"latesthack-moresubs\" style=\"display:" + latesthack111 + ";\">";
+    widget.value += "	    <a href=\"http:\/\/www.latesthack.com\/\">Get this Gadget<\/a>";
+    widget.value += "";
+    widget.value += "	<\/div>";
+    widget.value += "    <\/div>";
+    document.getElementsByName("go")[0].disabled = false
+}
+
+
+</script>
+</head>
+<body>
+<div id="dhi">
+<h2>Mashable Style Social Subscription Widget Generator</h2>
+<fieldset><legend>Settings</legend>
+<form action="http://www.blogger.com/add-widget" method="post" target="_blank">
+<table width="100%">
+<tr>
+<td width='60%'><label for='name='widget.title'>Widget title</label>:</td>
+<td width='40%'><input class='text-input' type='text' name='widget.title' value='Subscribe' size='30'></td>
+</tr>
+<tr></tr>
+<tr>
+<td width='60%'><label for='blogurl'>Blog Url:</label></td>
+<td width='40%'><input class="text-input" type='text' name='blogurl' value='http://www.latesthack.com' size='30'></td>
+</tr>
+<tr></tr>
+<tr>
+<td width='60%'><label for='width'>Width</label></td>
+<td width='40%'><input class="text-input" type='text' name='width' value='300' size='6'> px</td>
+</tr>
+</table>
+</fieldset>
+<br>
+<fieldset><legend>Google+ Badge</legend>
+<table width="100%">
+<tr>
+<td width='60%'><label for='latesthackgpid'>Google+ ID </label></td>
+<td width='40%'><input class="text-input" type='text' name='latesthackgpid' value='107877224551351252870' size='30'></td>
+</tr>
+</table>
+</fieldset>
+<br>
+<fieldset><legend>Facebook Like Button</legend>
+<table width="100%">
+<tr>
+<td width='60%'><label for='latesthackfurl'>Facebook Page URL</label></td>
+<td width='40%'><input class="text-input" type='text' name='latesthackfurl' value='https://www.facebook.com/latesthacking' size='30'></td>
+</tr>
+<tr></tr>
+<tr>
+<td width='60%'><label for='bg1'>Background Color: </label></td>
+<td width='40%'>#<input class="inputcolor text-input" type='text' name='bg1' value='FFFFFF' size='6'><span
+class="colorbox"></span></td>
+</tr>
+</table>
+</fieldset>
+<br>
+<fieldset><legend>Google+ Button</legend>
+<table width="100%">
+<tr>
+<td width='60%'><label for='bg2'>Background Color:</label></td>
+<td width='40%'>#<input class="inputcolor text-input" type='text' name='bg2' value='f5fcfe' size='6'><span
+class="colorbox"></span></td>
+</tr>
+</table>
+</fieldset>
+<br>
+<fieldset><legend>Pinterest Follow Button</legend>
+<table width="100%">
+<tr>
+<td width='60%'><label for='piusername'>Pinterest Url</label></td>
+<td width='40%'><input class="text-input" type='text' name='piusername' value='http://pinterest.com/latesthack' size='30'></td>
+</tr>
+<tr></tr>
+<tr>
+<td width='60%'><label for='bg27'>Background Color:</label></td>
+<td width='40%'>#<input class="inputcolor text-input" type='text' name='bg27' value='eef9fd' size='6'><span
+class="colorbox"></span></td>
+</tr>
+</table>
+</fieldset>
+<br>
+<fieldset><legend>Twitter Follow Button</legend>
+<table width="100%">
+<tr>
+<td width='60%'><label for='tusername'>Twitter Username</label></td>
+<td width='40%'><input class="text-input" type='text' name='tusername' value='latesthack' size='30'></td>
+</tr>
+<tr></tr>
+<tr>
+<td width='60%'><label for='bg3'>Background Color:</label></td>
+<td width='40%'>#<input class="inputcolor text-input" type='text' name='bg3' value='eef9fd' size='6'><span
+class="colorbox"></span></td>
+</tr>
+</table>
+</fieldset>
+<br>
+<fieldset><legend>Email Subscribe</legend>
+<table width="100%">
+<tr>
+<td width='60%'><label for='feedid'>Feedburner ID</label></td>
+<td width='40%'><input class="text-input" type='text' name='feedid' value='latesthack' size='30'></td>
+</tr>
+<tr></tr>
+<tr>
+<td width='60%'><label for='fname'>Button Style</label></td>
+<td width='40%'><select class="text-input"
+name="latesthackbutton" id="latesthackbutton" class="select-box"><option
+value="Default" selected="selected">Default</option><option
+value="Red">Red</option><option
+value="Blue">Blue</option><option
+value="Gray">Gray</option><option
+value="Purple">Purple</option><option
+value="Orange">Orange</option></td></tr>
+<tr></tr>
+<tr>
+<td width='60%'><label for='bg4'>Background Color:</label></td>
+<td width='40%'>#<input class="inputcolor text-input" type='text' name='bg4' value='E3EDF4' size='6'><span
+class="colorbox"></span></td>
+</tr>
+</table>
+</fieldset>
+
+<br>
+<fieldset><legend>Social Buttons</legend>
+<table width="100%">
+<tbody><tr>
+<td width="60%"><label for="bg5">Background Color:</label></td>
+<td width="40%">#<input class="inputcolor text-input" name="bg5" value="d8e6eb" size="6" type="text"><span style="background-color: rgb(216, 230, 235);" class="colorbox"></span></td>
+</tr>
+<tr></tr>
+<tr>
+<td width="25%"><label for="latestur1">Social Button 1</label></td>
+<td width="25%"><select class="text-input" name="latestur1" id="latestur1"><option value="Google Plus" selected="selected">Google Plus</option><option value="Pinterest" selected="selected">Pinterest</option><option value="Facebook" selected="selected">Facebook</option><option value="Twitter">Twitter</option><option value="Rss">Rss</option><option value="Stumbleupon">Stumbleupon</option><option value="Youtube">Youtube</option><option value="Delicious">Delicious</option></select></td><td width="25%"><label for="latestur11">URL</label></td><td width="25%"><input class="text-input" name="latestur11" value="" size="30" type="text"></td></tr>
+<tr></tr>
+<tr>
+<td width="60%"><label for="latestur2">Social Button 2</label></td>
+<td width="40%"><select class="text-input" name="latestur2" id="latestur2"><option value="Google Plus" selected="selected">Google Plus</option><option value="Facebook" selected="selected">Facebook</option><option value="Pinterest" selected="selected">Pinterest</option><option value="Twitter">Twitter</option><option value="Rss">Rss</option><option value="Stumbleupon">Stumbleupon</option><option value="Youtube">Youtube</option><option value="Delicious">Delicious</option></select></td><td width="25%"><label for="latestur12">URL</label></td><td width="25%"><input class="text-input" name="latestur12" value="" size="30" type="text"></td></tr>
+<tr></tr>
+<tr>
+<td width="60%"><label for="latestur3">Social Button 3</label></td>
+<td width="40%"><select class="text-input" name="latestur3" id="latestur3"><option value="Facebook" selected="selected">Facebook</option><option value="Pinterest" selected="selected">Pinterest</option><option value="Google Plus" selected="selected">Google Plus</option><option value="Twitter">Twitter</option><option value="Rss">Rss</option><option value="Stumbleupon">Stumbleupon</option><option value="Youtube">Youtube</option><option value="Delicious">Delicious</option></select></td><td width="25%"><label for="latestur13">URL</label></td><td width="25%"><input class="text-input" name="latestur13" value="" size="30" type="text"></td></tr>
+
+</tbody></table>
+</fieldset>
+<br>
+
+<fieldset><legend>Footer Credits</legend>
+<table width="100%">
+<tbody><tr>
+<td width="60%"><label for="bg28">Background Color:</label></td>
+<td width="40%">#<input class="inputcolor text-input" name="bg28" value="EBEBEB" size="6" type="text"><span style="background-color: rgb(216, 230, 235);" class="colorbox"></span></td>
+</tr>
+<tr></tr>
+<tr>
+<td width="60%"><label for="latesthacks111">Hide Latesthack Link?</label></td>
+<td width="40%"><select class="text-input" name="latesthacks111" id="latesthacks111"><option value="shown" selected="selected">No</option><option value="none">Yes</option></select></td></tr>
+
+</tbody></table>
+</fieldset>
+<br>
+<center><input style="width:180px; font-weight:bold;font-size:20px; " value="Generate" onclick="javascript:latesthackcodegen();" type="button">
+<input style="width:180px; font-weight:bold;font-size:20px; " disabled="disabled" name="go" value="Add to Blogger" type="submit"><br><textarea name="widget.content" style="display:none;"></textarea><input name="infoUrl" value="http://latesthack.com" type="hidden"><input name="logoUrl" value="http://2.bp.blogspot.com/-SCjXzV5gSAo/T0JuYoWKpWI/AAAAAAAAAA8/Wk-eW2zms9o/s1600/latesthack.jpg" type="hidden"></form></center>
+<br><br>
+<center><large><b> Copyright @ <a href='http://www.latesthack.com/'>LATESTHACK.COM</a></b></large></center>
+</div>
+</body></html>
