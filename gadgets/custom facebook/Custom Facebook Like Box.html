@@ -1,0 +1,110 @@
+<html>
+<head>
+
+<title>Custom Facebook Like Box</title>
+<style type="text/css">
+#dhi { width: 95%; max-widtd:980px;  margin: 0 auto;  padding: 5px;  text-align: left;  background-color: #ffffff;
+
+border:2px solid #336699;
+
+-webkit-border-radius: 20px;-moz-border-radius: 20px;border-radius: 20px;
+
+}
+.text-input, .select-box{
+
+	margin:0 2px;
+
+	padding:4px 6px;
+
+	border: 1px solid #336699;
+
+
+
+	-webkit-border-radius: 4px;
+
+	-moz-border-radius: 4px;
+
+	border-radius: 4px;
+
+	font-family: gergia;
+
+	font-style: italic;
+
+
+
+	-webkit-box-shadow: 1px 1px 1px #336699;
+
+	-moz-box-shadow: 1px 1px 1px #336699;
+
+	box-shadow: 1px 1px 1px #336699;
+
+	font-size: 14px;
+
+	color: #666;
+
+	max-width:auto;
+
+}
+label       { font-family: Verdana, Arial;margin: 0;padding: 0;text-align: left;font-size:15px; font-weight:bold; }
+
+
+			.redi{-moz-border-radius: 8px; -webkit-border-radius: 8px; border-radius: 8px; font-size:15px; font-weight:bold;}
+		</style>
+<script type="text/javascript">
+function latesthackcodegen() {
+    var agoogle = document.getElementsByName("google")[0].value;
+    var afacebook = document.getElementsByName("facebook")[0].value;
+    var atwitter = document.getElementsByName("twitter")[0].value;
+    var arss = document.getElementsByName("rss")[0].value;
+    var widget = document.getElementsByName("widget.content")[0];
+    widget.value = "<iframe frameborder=\"0\" height=\"" + afacebook + "\" src=\"http:\/\/www.connect.facebook.com\/widgets\/fan.php?channel_url=http:\/\/latesthack.com\/?fbc_channel=2&amp;id=" + agoogle + "&amp;name=&amp;width=" + atwitter + "&amp;connections=" + arss + "&amp;stream=0&amp;logobar=0&amp;css=http:\/\/latest-hacks.googlecode.com\/svn\/latest.css\"><\/iframe>";
+    document.getElementsByName("go")[0].disabled = false
+}
+function latesthackReset() {
+    document['getElementsByName']('facebook')[0]['value'] = '280';
+    document['getElementsByName']('google')[0]['value'] = '311198748928825';
+    document['getElementsByName']('twitter')[0]['value'] = '295';
+    document['getElementsByName']('rss')[0]['value'] = '10';
+    document['getElementsByName']('go')[0]['disabled'] = true;
+    document['getElementsByName']('gen')[0]['disabled'] = false
+};
+
+</script>
+</head>
+<body>
+<div id="dhi">
+<h2>Custom Facebook Like Box by LATESTHACK.COM</h2>
+<form method="post" action="http://www.blogger.com/add-widget" target="_blank">
+
+<fieldset class='redi'><legend class='redi' align='left' style='border:2px solid #336699;padding:3px 10px;margin-left:20px;'>Settings</legend><div style="text-align: left; font-size: 85%;">
+<table width="100%">
+<tr>
+<td width='60%'><label for='name='google'>Facebook ID</label>:</td>
+<td width='40%'><input class='text-input' type='text' name='google' value='311198748928825' size='30'></td>
+</tr>
+<tr></tr>
+<tr>
+<td width='60%'><label for='facebook'>Height</label></td>
+<td width='40%'><input class="text-input" type='text' name='facebook' value='280' size='30'></td>
+</tr>
+<tr></tr>
+<tr>
+<td width='60%'><label for='twitter'>Width</label></td>
+<td width='40%'><input class="text-input" type='text' name='twitter' value='295' size='30'></td>
+</tr>
+<tr></tr>
+<tr>
+<td width='60%'><label for='rss'>No Of Faces To Show</label></td>
+<td width='40%'><input class="text-input" type='text' name='rss' value='10' size='30'></td>
+</tr>
+</table>
+
+</div><br><center><input style="width:180px; font-weight:bold;font-size:20px; " value="Generate" onclick="javascript:latesthackcodegen();" type="button"><input style="width:180px; font-weight:bold;font-size:20px; " value="Reset" onclick="javascript:latesthackReset();" type="button"><br>
+<input style="width:360px; font-weight:bold;font-size:20px; " disabled="disabled" name="go" value="Add to Blogger" type="submit"><br><textarea name="widget.content" style="display:none;"></textarea><input name="infoUrl" value="http://latesthack.com" type="hidden"><input name="logoUrl" value="http://2.bp.blogspot.com/-SCjXzV5gSAo/T0JuYoWKpWI/AAAAAAAAAA8/Wk-eW2zms9o/s1600/latesthack.jpg" type="hidden"></form></center>
+</form><br>
+<br>
+<center><large> <b>Copyright @ <a href='http://www.latesthack.com/'>LATESTHACK.COM</a></b></large></center>
+
+
+</div>
+</body></html>
