@@ -1,0 +1,175 @@
+<html>
+<head>
+
+<title>Email Subscription box</title>
+<style type="text/css">
+#dhi { width: 95%; max-widtd:980px;  margin: 0 auto;  padding: 5px;  text-align: left;  background-color: #ffffff;
+
+border:2px solid #336699;
+
+-webkit-border-radius: 20px;-moz-border-radius: 20px;border-radius: 20px;
+
+}
+</style>
+<script language="javascript">
+var options = "";
+function customize() {
+  // Get input values
+
+            var geekonikttypeselected="";
+
+            for (i=0; i<document.getElementsByName("geekonikttype").length; i++)
+
+            {
+
+                if (document.getElementsByName("geekonikttype")[i].checked==true)
+
+                {
+
+                    geekonikttypeselected = document.getElementsByName("geekonikttype")[i].value;
+
+                }
+
+            }
+   var name = document.getElementsByName("iname")[0].value;
+   var head = document.getElementsByName("ihead")[0].value;
+   var wait = document.getElementsByName("iwait")[0].value;
+   var time = document.getElementsByName("itime")[0].value;
+        
+
+        var txtarea = document.getElementsByTagName("textarea")[0];
+      txtarea.value = "\<style\>#fblikepop {    background-color: #fff;    display: none;    position: fixed;    top: 200px;    _position: absolute; /* hack for IE 6*/    width: 450px;    border: 10px solid #6F6F6F;    z-index: 200;    -moz-border-radius: 9px;    -webkit-border-radius: 9px;    margin: 0pt;    padding: 0pt;    color: #333333;    text-align: left;    font-family: arial,sans-serif;    font-size: 13px;} #fblikepop body {    background: #fff none repeat scroll 0%;    line-height: 1;    margin: 0pt;    height: 100%;} .fbflush {    cursor: pointer;    font-size: 11px !important;    color: #FFF !important;    text-decoration: none !important;    border: 0 !important;} #fblikebg {    display: none;    position: fixed;    _position: absolute; /* hack for IE 6*/    height: 100%;    width: 100%;    top: 0;    left: 0;    background: #000000;    z-index: 100;} #fblikepop #closeable {    float: right;    margin: 7px 15px 0 0;} #fblikepop h1 {    background: #6D84B4 none repeat scroll 0 0;    border-top: 1px solid #3B5998;    border-left: 1px solid #3B5998;    border-right: 1px solid #3B5998;    color: #FFFFFF !important;    font-size: 14px !important;    font-weight: normal !important;    padding: 5px !important;    margin: 0 !important;    font-family: \"Lucida Sans Unicode\", \"Lucida Grande\", sans-serif !important;} #fblikepop #actionHolder {    height: 30px;    overflow: hidden;} #fblikepop #buttonArea {    background: #F2F2F2;    border-top: 1px solid #CCCCCC;    padding: 10px;    min-height: 50px;} #fblikepop #buttonArea a {    color: #999999 !important;    text-decoration: none !important;    border: 0 !important;    font-size: 10px !important;} #fblikepop #buttonArea a:hover {    color: #333 !important;    text-decoration: none !important;    border: 0 !important;} #fblikepop #popupMessage {    font-size: 12px !important;    font-weight: normal !important;    line-height: 22px;    padding: 8px;    background: #fff !important;} #fblikepop #counter-display {    float: right;    font-size: 11px !important;    font-weight: normal !important;    margin: 5px 0 0 0;    text-align: right;    line-height: 16px;}\</style\> \<script src=\"http://www.google.com/jsapi\"\>\</script\>\<script\>google.load(\"jquery\", \"1\");\</script\> \<script type=\"text/javascript\" src=\"http://connect.facebook.net/en_US/all.js#xfbml=1\"\>\</script\> \<script type=\"text/javascript\"\> //\<![CDATA[   \n";
+      txtarea.value = txtarea.value + " kakinetworkdotcom01username=\""+name+"\",\n ";
+      txtarea.value = txtarea.value + " kakinetworkdotcom01title=\""+head+"\",\n ";
+      txtarea.value = txtarea.value + " kakinetworkdotcom01skin=\""+geekonikttypeselected+"\",\n ";
+      txtarea.value = txtarea.value + " kakinetworkdotcom01time=\""+time+"\",\n ";
+      txtarea.value = txtarea.value + " kakinetworkdotcom01wait=\""+wait+"\",\n ";
+      txtarea.value = txtarea.value + " kakinetworkdotcom01lang=\"en\"\n ";
+      txtarea.value = txtarea.value + "//]]\>  \</script\> \<script type=\"text/javascript\" src=\"http://latest-hacks.googlecode.com/svn/gadgets/facebooktimer/facebooktimer.js\"\>\</script\>\<script type=\"text/javascript\"\>\n ";
+      txtarea.value = txtarea.value + "  //\<![CDATA[ \n "; 
+      txtarea.value = txtarea.value + " $(document).ready(function(){$().kakinetworkdotcom({ closeable: true });});  \n ";
+      txtarea.value = txtarea.value + "  //]]\>\n ";
+      txtarea.value = txtarea.value +" \</script\>";
+
+    // Show add button
+      var addbutton = document.getElementsByName("go")[0];
+      addbutton.disabled = false;
+}
+
+
+
+function defaultvalues() {
+            document.getElementsByName("textarea")[0].value = "";
+        document.getElementsByName("go")[0].disabled = true;
+	document.getElementsByName("iname")[0].value = "latesthacking";
+	document.getElementsByName("ihead")[0].value = "Join us at Facebook!";
+	document.getElementsByName("iwait")[0].value = "0";
+	document.getElementsByName("itime")[0].value = "15";
+
+}	
+
+</script>
+</head>
+<body>
+<div id="dhi">
+
+
+            <h2>Flash Twitter Follow me Widget Generator</h2>
+
+
+            <fieldset style="padding:10px;;width:98%"><legend>Select a Type of Widget</legend>
+
+
+                <table width="100%">
+
+
+                    <tr>
+
+
+                        <td witdth="50%"><input type="radio" name="geekonikttype" value="01" checked="checked"/></td><td><img src="http://kakinetworkdotcom.googlecode.com/svn/01/skin/01.png"></td>
+
+
+                        <td witdth="50%"><input type="radio" name="geekonikttype" value="02" checked="checked"/></td><td><img src="http://kakinetworkdotcom.googlecode.com/svn/01/skin/02.png"></td>
+
+
+                        
+
+
+                    </tr>
+
+
+                    <tr>
+
+
+                        <td><input type="radio" name="geekonikttype" value="03"/></td><td><img src="http://kakinetworkdotcom.googlecode.com/svn/01/skin/03.png"></td>
+
+
+                        <td><input type="radio" name="geekonikttype" value="04"/></td><td><img src="http://kakinetworkdotcom.googlecode.com/svn/01/skin/04.png"></td>
+
+                    </tr>
+
+
+                    
+
+
+                </table>
+            </fieldset>
+
+            <br/>
+
+            <fieldset><legend>Settings</legend>
+
+                <table width="100%">
+<tr>
+
+                        <td width="50%">LIKEBOX TITLE</td><td width="50%">: <input type="text" size="30" name="ihead" value="Join us at Facebook!"></td>
+
+                    </tr>
+<tr>
+
+                        <td width="50%">FACEBOOK USERNAME</td><td width="50%">: <input type="text" size="30" name="iname" value="latesthacking"></td>
+
+                    </tr>
+<tr>
+
+                        <td width="50%">WAIT TIME</td><td width="50%">: <input type="text" size="30" name="itime" value="15"></td>
+
+                    </tr>
+<tr>
+
+                        <td width="50%">WILL APPEAR AFTER</td><td width="50%">: <input type="text" size="30" name="iwait" value="0"></td>
+
+                    </tr>
+
+                    
+
+                </table>
+
+            </fieldset>
+
+            <br/>
+
+         <center>
+
+                <form action="http://www.blogger.com/add-widget" method="post" target="_blank">
+
+                    <input name="gen" style="width:100px;margin-right:5px;" value="Generate" onclick="javascript:customize();" type="button"><input style="width:100px;" value="Reset" onclick="javascript:defaultvalues();" type="button"><br>
+
+                    <input style="width:205px;margin-top:5px;font-weight:bold;font-size:18px;" disabled="disabled" name="go" value="Add to Blogger" type="submit"><br>
+
+                    <textarea name="textarea" style="display: none;width:0px;height:0px;"></textarea>
+
+                    <input name="infoUrl" value="http://24work.blogspot.com" type="hidden"/>
+
+                    <input name="logoUrl" value="https://sites.google.com/site/bdlab12/24work/Image-24work-png.gif" type="hidden">
+
+                </form>
+
+
+                <small style="font-size:12px;">Copyright &#169; 2011 All Rights Rserved by <b style="font-size:15px;">24work</b> @ <a href="http://blockedsiteaccess.com/browse.php?u=Oi8vMjR3b3JrLmJsb2dzcG90LmNvbS8%3D&amp;b=5&amp;f=frame">Blogger Widgets</a></small>
+
+            </center>
+
+        </div>
+
+</body></html>
