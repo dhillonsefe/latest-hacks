@@ -1,0 +1,55 @@
+<html>
+<head>
+<script type="text/javascript" src="http://latesthack.googlecode.com/svn/colorpickerwidget.js"></script>
+<title>Mashable Style Social Subscription Widget Generator</title>
+<style type="text/css">
+#related-posts {
+float:center;
+text-transform:none;
+height:100%;
+min-height:100%;
+padding-top:5px;
+padding-left:5px;
+}
+
+#related-posts h2{
+font-size: 1.6em;
+font-weight: bold;
+color: black;
+font-family: Georgia, &#8220;Times New Roman&#8221;, Times, serif;
+margin-bottom: 0.75em;
+margin-top: 0em;
+padding-top: 0em;
+}
+#related-posts a{
+color:black;
+}
+#related-posts a:hover{
+color:black;
+}
+
+#related-posts  a:hover {
+background-color:#d4eaf2;
+}
+		</style>
+<script type='text/javascript'>
+var defaultnoimage="http://4.bp.blogspot.com/-M7hjx3te4qM/T2rM4fC-WsI/AAAAAAAAAuw/FRNCDelc5KM/s1600/noimage.png";
+var maxresults=7;
+var splittercolor="#d4eaf2";
+var relatedpoststitle="Related Posts";
+</script>
+<script src='http://latest-hacks.googlecode.com/svn/abcd.js' type='text/javascript'/>
+
+</head>
+<body>
+<div id='related-posts'>
+<b:loop values='data:post.labels' var='label'>
+<b:if cond='data:label.isLast != &quot;true&quot;'>
+</b:if>
+<script expr:src='&quot;http://www.latesthack.com/feeds/posts/default/-/&quot; + data:label.name + &quot;?alt=json-in-script&amp;callback=related_results_labels_thumbs&amp;max-results=6&quot;' type='text/javascript'/></b:loop>
+<script type='text/javascript'>
+removeRelatedDuplicates_thumbs();
+printRelatedLabels_thumbs(&quot;<data:post.url/>&quot;);
+</script>
+</div>
+</body></html>
