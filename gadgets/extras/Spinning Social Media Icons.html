@@ -1,0 +1,137 @@
+<html><head>
+<title>CSS3 Spinning Social Media Icons Generator</title>
+<style type="text/css">
+#dhi { width: 95%; max-widtd:980px;  margin: 0 auto;  padding: 5px;  text-align: left;  background-color: #fff;
+
+border:2px solid #336699;
+
+-webkit-border-radius: 20px;-moz-border-radius: 20px;border-radius: 20px;
+
+}
+
+
+.text-input, .select-box{
+
+	margin:0 2px;
+
+	padding:4px 6px;
+
+	border: 1px solid #336699;
+
+
+
+	-webkit-border-radius: 4px;
+
+	-moz-border-radius: 4px;
+
+	border-radius: 4px;
+
+	font-family: gergia;
+
+	font-style: italic;
+
+
+
+	-webkit-box-shadow: 1px 1px 1px #336699;
+
+	-moz-box-shadow: 1px 1px 1px #336699;
+
+	box-shadow: 1px 1px 1px #336699;
+
+	font-size: 14px;
+
+	color: #666;
+
+	max-width:auto;
+
+}
+label       { font-family: Verdana, Arial;margin: 0;padding: 0;text-align: left;font-size:15px; font-weight:bold; }
+
+
+			.redi{-moz-border-radius: 8px; -webkit-border-radius: 8px; border-radius: 8px; font-size:15px; font-weight:bold;}
+
+p#socialicons img {    -moz-transition: all 0.2s ease-in-out;    -webkit-transition: all 0.2s ease-in-out;    -o-transition: all 0.2s ease-in-out;    -ms-transition: all 0.2s ease-in-out;    transition: all 0.2s ease-in-out;} p#socialicons img:hover {    -moz-transform: rotate(70deg);    -webkit-transform: rotate(70deg);    -o-transform: rotate(70deg);    -ms-transform: rotate(70deg);    transform: rotate(70deg);} p#socialicons1 img {    -moz-transition: all 0.8s ease-in-out;    -webkit-transition: all 0.8s ease-in-out;    -o-transition: all 0.8s ease-in-out;    -ms-transition: all 0.8s ease-in-out;    transition: all 0.8s ease-in-out;} p#socialicons1 img:hover {    -moz-transform: rotate(360deg);    -webkit-transform: rotate(360deg);    -o-transform: rotate(360deg);    -ms-transform: rotate(360deg);    transform: rotate(360deg);} p#socialicons2 img {    -moz-transition: all 0.5s ease-in-out;    -webkit-transition: all 0.5s ease-in-out;    -o-transition: all 0.5s ease-in-out;    -ms-transition: all 0.5s ease-in-out;    transition: all 0.5s ease-in-out;} p#socialicons2 img:hover {    -moz-transform: rotate(-360deg);    -webkit-transform: rotate(-360deg);    -o-transform: rotate(-360deg);    -ms-transform: rotate(-360deg);    transform: rotate(-360deg);}
+</style>
+<script type="text/javascript">
+function latesthackGenerate() {
+    var lhttypeselected = "";
+    for (i = 0; i < document.getElementsByName("lhttype").length; i++) {
+        if (document.getElementsByName("lhttype")[i].checked == true) {
+            lhttypeselected = document.getElementsByName("lhttype")[i].value
+        }
+    }
+
+    document.getElementsByName("go")[0].disabled = false;
+    document.getElementsByName("gen")[0].disabled = true;
+    var lhfburl = document.getElementsByName("fb")[0].value;
+    var lhtwiturl = document.getElementsByName("twitter")[0].value;
+    var lhgplus = document.getElementsByName("gplus")[0].value;
+    var lhfeed = document.getElementsByName("feed")[0].value;
+    var lhwidget = document.getElementsByTagName("textarea")[0];
+    lhwidget.value = "<style>p#socialicons img {    -moz-transition: all 0.2s ease-in-out;    -webkit-transition: all 0.2s ease-in-out;    -o-transition: all 0.2s ease-in-out;    -ms-transition: all 0.2s ease-in-out;    transition: all 0.2s ease-in-out;} p#socialicons img:hover {    -moz-transform: rotate(70deg);    -webkit-transform: rotate(70deg);    -o-transform: rotate(70deg);    -ms-transform: rotate(70deg);    transform: rotate(70deg);} p#socialicons1 img {    -moz-transition: all 0.8s ease-in-out;    -webkit-transition: all 0.8s ease-in-out;    -o-transition: all 0.8s ease-in-out;    -ms-transition: all 0.8s ease-in-out;    transition: all 0.8s ease-in-out;} p#socialicons1 img:hover {    -moz-transform: rotate(360deg);    -webkit-transform: rotate(360deg);    -o-transform: rotate(360deg);    -ms-transform: rotate(360deg);    transform: rotate(360deg);} p#socialicons2 img {    -moz-transition: all 0.5s ease-in-out;    -webkit-transition: all 0.5s ease-in-out;    -o-transition: all 0.5s ease-in-out;    -ms-transition: all 0.5s ease-in-out;    transition: all 0.5s ease-in-out;} p#socialicons2 img:hover {    -moz-transform: rotate(-360deg);    -webkit-transform: rotate(-360deg);    -o-transform: rotate(-360deg);    -ms-transform: rotate(-360deg);    transform: rotate(-360deg);}<\/style><center><p id=\"" + lhttypeselected + "\">    <a href=\"http:\/\/www.facebook.com\/" + lhfburl + "\" target=\"_blank\"><img border=\"0\" src=\"http:\/\/4.bp.blogspot.com\/-Q7l2AIANnbI\/UApzYR4CKWI\/AAAAAAAABDE\/g7m_rz8dW0s\/s1600\/latesthack.com-facebook.png\" \/><\/a>    <a href=\"http:\/\/www.twitter.com\/" + lhtwiturl + "\/\" target=\"_blank\"><img border=\"0\" src=\"http:\/\/4.bp.blogspot.com\/-GHi-SgA9yWY\/UApzaE6ooTI\/AAAAAAAABDc\/glSG637KE4U\/s1600\/latesthack.com-twitter.png\" \/><\/a>    <a href=\"https:\/\/plus.google.com\/u\/0\/" + lhgplus + "\" target=\"_blank\"><img border=\"0\" src=\"http:\/\/3.bp.blogspot.com\/-4sZkt3DbUxg\/UApzY-Eda8I\/AAAAAAAABDM\/p8-j4asZm6Q\/s1600\/latesthack.com-google_plus.png\" \/><\/a>    <a href=\"http:\/\/www.feeds.feedburner.com\/" + lhfeed + "\/\" target=\"_blank\"><img border=\"0\" src=\"http:\/\/2.bp.blogspot.com\/-qxygObBRqtM\/UApzZd8YQNI\/AAAAAAAABDU\/Pxn3uOsVjeg\/s1600\/latesthack.com-rss.png\" \/><\/a><\/p><\/center>";
+    
+}
+function latesthackReset() {
+    document.getElementsByName("fb")[0].value = "latesthacking";
+    document.getElementsByName("gplus")[0].value = "107877224551351252870";
+    document.getElementsByName("twitter")[0].value = "latesthack";
+    document.getElementsByName("feed")[0].value = "latesthack";
+    document.getElementsByName("lhttype")[0].checked = true;
+    document.getElementsByName("go")[0].disabled = true;
+    document.getElementsByName("gen")[0].disabled = false
+}</script>
+</head>
+<body>   
+    <div id="dhi">
+       <center><h2>CSS3 Spinning Social Media Icons</h2></center>
+<form method="post" action="http://www.blogger.com/add-widget" target="_blank">
+<fieldset class='redi'><legend class='redi' align='left' style='border:2px solid #336699;padding:3px 10px;margin-left:20px;'>&nbsp;Select a Style&nbsp;</legend>
+<hr width="100%" align="center">
+<table width="100%">
+<tbody><tr>
+<td align="right"><input checked="checked" name="lhttype" type="radio" value="socialicons"></td>
+<td align="left" height="150px">
+<p id="socialicons">    <a href="http://www.facebook.com/latesthacking" target="_blank"><img border="0" src="http://4.bp.blogspot.com/-Q7l2AIANnbI/UApzYR4CKWI/AAAAAAAABDE/g7m_rz8dW0s/s1600/latesthack.com-facebook.png" /></a>    <a href="http://www.twitter.com/latesthack/" target="_blank"><img border="0" src="http://4.bp.blogspot.com/-GHi-SgA9yWY/UApzaE6ooTI/AAAAAAAABDc/glSG637KE4U/s1600/latesthack.com-twitter.png" /></a>    <a href="https://plus.google.com/u/0/107877224551351252870" target="_blank"><img border="0" src="http://3.bp.blogspot.com/-4sZkt3DbUxg/UApzY-Eda8I/AAAAAAAABDM/p8-j4asZm6Q/s1600/latesthack.com-google_plus.png" /></a>    <a href="http://www.feeds.feedburner.com/latesthack/" target="_blank"><img border="0" src="http://2.bp.blogspot.com/-qxygObBRqtM/UApzZd8YQNI/AAAAAAAABDU/Pxn3uOsVjeg/s1600/latesthack.com-rss.png" /></a></p></td></tr>
+</table></tbody>
+<hr width="100%" align="center">
+<table width="100%">
+<tbody><tr>
+<td align="right"><input name="lhttype" type="radio" value="socialicons1"></td>
+<td align="left" height="150px">
+<p id="socialicons1">    <a href="http://www.facebook.com/latesthacking" target="_blank"><img border="0" src="http://4.bp.blogspot.com/-Q7l2AIANnbI/UApzYR4CKWI/AAAAAAAABDE/g7m_rz8dW0s/s1600/latesthack.com-facebook.png" /></a>    <a href="http://www.twitter.com/latesthack/" target="_blank"><img border="0" src="http://4.bp.blogspot.com/-GHi-SgA9yWY/UApzaE6ooTI/AAAAAAAABDc/glSG637KE4U/s1600/latesthack.com-twitter.png" /></a>    <a href="https://plus.google.com/u/0/107877224551351252870" target="_blank"><img border="0" src="http://3.bp.blogspot.com/-4sZkt3DbUxg/UApzY-Eda8I/AAAAAAAABDM/p8-j4asZm6Q/s1600/latesthack.com-google_plus.png" /></a>    <a href="http://www.feeds.feedburner.com/latesthack/" target="_blank"><img border="0" src="http://2.bp.blogspot.com/-qxygObBRqtM/UApzZd8YQNI/AAAAAAAABDU/Pxn3uOsVjeg/s1600/latesthack.com-rss.png" /></a></p></td></tr>
+</table></tbody>
+<hr width="100%" align="center">
+<table width="100%">
+<tbody><tr>
+<td align="right"><input name="lhttype" type="radio" value="socialicons2"></td>
+<td align="left" height="150px">
+<p id="socialicons2">    <a href="http://www.facebook.com/latesthacking" target="_blank"><img border="0" src="http://4.bp.blogspot.com/-Q7l2AIANnbI/UApzYR4CKWI/AAAAAAAABDE/g7m_rz8dW0s/s1600/latesthack.com-facebook.png" /></a>    <a href="http://www.twitter.com/latesthack/" target="_blank"><img border="0" src="http://4.bp.blogspot.com/-GHi-SgA9yWY/UApzaE6ooTI/AAAAAAAABDc/glSG637KE4U/s1600/latesthack.com-twitter.png" /></a>    <a href="https://plus.google.com/u/0/107877224551351252870" target="_blank"><img border="0" src="http://3.bp.blogspot.com/-4sZkt3DbUxg/UApzY-Eda8I/AAAAAAAABDM/p8-j4asZm6Q/s1600/latesthack.com-google_plus.png" /></a>    <a href="http://www.feeds.feedburner.com/latesthack/" target="_blank"><img border="0" src="http://2.bp.blogspot.com/-qxygObBRqtM/UApzZd8YQNI/AAAAAAAABDU/Pxn3uOsVjeg/s1600/latesthack.com-rss.png" /></a></p></td></tr>
+</table></tbody>
+</fieldset>
+<br>
+<fieldset class='redi'><legend class='redi' align='left' style='border:2px solid #336699;padding:3px 10px;margin-left:20px;'><b>Settings</b></legend>
+<table width="100%"><tr>
+<td width="40%">Facebook Username:</td> 
+<td width="60%"><input class="text-input" size="30" name="fb" value="latesthacking" type="text"></td></tr>
+<tr><td>&nbsp;</td></tr>
+<tr>
+<td width="40%">Twitter Username:</td> 
+<td width="60%"><input class="text-input" size="30" name="twitter" value="latesthack" type="text"></td></tr>
+<tr><td>&nbsp;</td></tr>
+<tr>
+<td width="40%">Feedburner Username:</td> 
+<td width="60%"><input class="text-input" size="30" name="feed" value="latesthack" type="text"></td></tr>
+<tr><td>&nbsp;</td></tr>
+<tr>
+<td width="40%">Google+ ID:</td> 
+<td width="60%"><input class="text-input" size="30" name="gplus" value="107877224551351252870" type="text"></td></tr>
+</table>
+<br></fieldset><br>
+<input name="infoUrl" value="http://www.gj37765.blogspot.com" type="hidden">
+<input name="logoUrl" value="http://1.bp.blogspot.com/-F3E_NLszdVw/Tww_IEoQz7I/AAAAAAAACUQ/RnnmPBjcNXg/s1600/1326202408.jpg" type="hidden">
+<center><input name="gen" style="width:100px;margin-right:5px;" value="Generate" onclick="javascript:latesthackGenerate();" type="button"><input style="width:100px;" value="Reset" onclick="javascript:latesthackReset();" type="button"><br>
+<input style="width:205px;margin-top:5px;font-weight:bold;font-size:18px;" disabled="disabled" name="go" value="Add to Blogger" type="submit"></center><br>
+<textarea name="widget.content" style="width:0px;height:0px;display:none;"></textarea>
+</form><br>
+  <center><large><b>Copyright @ <a href="http://www.latesthack.com">LATESTHACK.COM</a></b></large></center>
+</body></html>
