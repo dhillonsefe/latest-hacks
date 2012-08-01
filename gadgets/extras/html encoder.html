@@ -1,0 +1,61 @@
+
+<head>
+<style>
+textarea {
+width:100%;
+color:#6E818C;
+font:14px 'trebuchet ms',helvetica,sans-serif;
+border:none; }
+</style>
+
+<script type='text/javascript'>
+
+//<![CDATA[
+
+
+function html2entities(){
+var re=/[<>"'&]/g
+for (i=0; i<arguments.length; i++)
+arguments[i].value=arguments[i].value.replace(re, function(m){return replacechar(m)})
+}
+
+function replacechar(match){
+if (match=="<")
+return "&lt;"
+else if (match==">")
+return "&gt;"
+else if (match=="\"")
+return "&quot;"
+else if (match=="'")
+return "&#039;"
+else if (match=="&")
+return "&amp;"
+}
+//]]>
+</script>
+
+
+</head>
+<body>
+<form>
+  <p><font color="#6B828E" size="2" face="Arial, Helvetica, sans-serif"></font></p>
+
+  <p>
+    <font color="#000;" size="2" face="Arial, Helvetica, sans-serif"><textarea onfocus="this.select()" onmouseover="this.focus()" onclick="this.focus();this.select()" name="data1" style="width: 100%; height: 300px;overflow:hidden; border:1px solid;"></textarea>
+  </font></p>
+  <p align=""><font color="#fff" size="2" face="Arial, Helvetica, sans-serif"><br>
+      <input name="button" type="button" onClick="html2entities(this.form.data1)" value="Convert"> 
+      <input name="Clear" value="  Clear  " type="reset">
+      <br>
+      <br>
+
+      <br>
+
+  </font></p>
+  </form>
+</div>
+</div>
+
+
+</body>
+</html>
