@@ -1,0 +1,181 @@
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=ISO-8859-1">
+<link rel="stylesheet" type="text/css" href="http://latesthack.googlecode.com/svn/colorpicker.css" media="all" />
+
+
+<script type='text/javascript'src='http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js?ver=1.7.1'></script> 
+
+
+<script type="text/javascript" src="http://latesthack.googlecode.com/svn/jqueryvalidationengine.js"></script>
+
+
+<script type="text/javascript" src="http://latesthack.googlecode.com/svn/colorpicker.js"></script>
+
+
+<script type="text/javascript" src="http://latesthack.googlecode.com/svn/colorpickerwidget.js"></script>
+<title>Stickybar With Auto Scrolling Recent Post Widget Generator by Making Different</title>
+<style type="text/css">
+#dhi { width: 95%; max-widtd:980px;  margin: 0 auto;  padding: 5px;  text-align: left;  background-color: #ffffff;
+
+border:2px solid #336699;
+
+-webkit-border-radius: 20px;-moz-border-radius: 20px;border-radius: 20px;
+
+}
+.text-input, .select-box{
+
+	margin:0 2px;
+
+	padding:4px 6px;
+
+	border: 1px solid #336699;
+
+
+
+	-webkit-border-radius: 4px;
+
+	-moz-border-radius: 4px;
+
+	border-radius: 4px;
+
+	font-family: gergia;
+
+	font-style: italic;
+
+
+
+	-webkit-box-shadow: 1px 1px 1px #336699;
+
+	-moz-box-shadow: 1px 1px 1px #336699;
+
+	box-shadow: 1px 1px 1px #336699;
+
+	font-size: 14px;
+
+	color: #666;
+
+	max-width:auto;
+
+}
+label       { font-family: Verdana, Arial;margin: 0;padding: 0;text-align: left;font-size:15px; font-weight:bold; }
+
+
+			.redi{-moz-border-radius: 8px; -webkit-border-radius: 8px; border-radius: 8px; font-size:15px; font-weight:bold;}
+		</style>
+<script type="text/javascript">
+function makingdifferentcodegen() {
+    var blogurl = document.getElementsByName("mbtblogurl")[0].value;
+    if (blogurl.substring(0, 7) == "http://") blogurl = blogurl.substring(7, blogurl.length);
+    if (blogurl[blogurl.length - 1] == "/") blogurl = blogurl.substring(0, blogurl.length - 1);
+    var MaxPosts = document.getElementsByName("mbtMaxPosts")[0].value;
+    var sticfloat = document.getElementsByName("mbtstickyfloat")[0].value;
+    var LinkLocation = document.getElementsByName("mbtLinkLocation")[0].value;
+    var ScrollDelay = document.getElementsByName("mbtScrollDelay")[0].value;
+    var BulletChar = document.getElementsByName("mbtBulletChar")[0].value;
+    var stickybarbgcolor = document.getElementsByName("mbtbgcolor")[0].value;
+    var linkscolor = document.getElementsByName("mbtlinkscolor")[0].value;
+    var BulletCharcolor = document.getElementsByName("mbtBulletCharcolor")[0].value;
+    var widget = document.getElementsByName("widget.content")[0];
+    widget.value = "<script src='http:\/\/ajax.googleapis.com\/ajax\/libs\/jquery\/1.3.2\/jquery.min.js' type='text\/javascript'><\/script>";
+    widget.value = widget.value + "<script style=\"\" src=\"http:\/\/latest-hacks.googlecode.com\/svn\/gadgets\/scrolling-recent-posts\/latesthackstickybar.js\"><\/script>";
+    widget.value = widget.value + "<script src=\"https:\/\/latest-hacks.googlecode.com\/svn\/gadgets\/scrolling-recent-posts\/latesthackstickybar1.js\"><\/script><style>#mbt-stickybar{background:#" + stickybarbgcolor + " url('http:\/\/1.bp.blogspot.com\/-vVMsayzZX_M\/T090HEfvMbI\/AAAAAAAAASc\/gRz_q3K2Spo\/s1600\/stickybar.png') repeat-x;width:100%;margin:0 auto;text-align:center;padding:0px 0;top:0px;color:#" + BulletCharcolor + ";border-bottom:2px solid #000;\/*box-shadow*\/-webkit-box-shadow:#666666 0px 1px 3px;-moz-box-shadow:#666666 0px 1px 3px;box-shadow:#666666 0px 1px 3px;z-index:999;display:none;height:28px;position:absolute;line-height:1.85em;vertical-align:baseline;letter-spacing:1px;}#mbt-stickybar a{text-decoration:none;color:#" + linkscolor + ";font-size:13px;font-weight:bold;font-family:arial,\"Helvetica\",sans-serif;line-height:24px;}#mbt-stickybar a:hover{text-decoration:underline;}#mbt-stickybar p{margin:0;list-style:none;}#mbt-stickybar img{vertical-align:middle;margin-right:6px;}#mbtclose{padding:0px;float:right;cursor:hand;cursor:pointer;color:#ddd!important;}<\/style>";
+    widget.value = widget.value + "<div id='mbt-stickybar'>";
+    widget.value = widget.value + "<script>";
+    widget.value = widget.value + "var nMaxPosts = " + MaxPosts + ";";
+    widget.value = widget.value + "var nWidth = 95;";
+    widget.value = widget.value + "var nScrollDelay = " + ScrollDelay + ";";
+    widget.value = widget.value + "var sDirection = \"" + sticfloat + "\";";
+    widget.value = widget.value + "var sOpenLinkLocation = \"" + LinkLocation + "\";";
+    widget.value = widget.value + "var sBulletChar = \"" + BulletChar + "\";";
+    widget.value = widget.value + "<\/script><script style=\"\"  src=\"http:\/\/" + blogurl + "\/feeds\/posts\/default?alt=json-in-script&amp;callback=RecentPostsScrollerv2&amp;max-results=" + MaxPosts + " \" ><\/script>";
+    widget.value = widget.value + "<a href=\"#\" id=\"mbtclose\"  onclick=\"return false;\"><img src=\"http:\/\/4.bp.blogspot.com\/-r2L8wiEO5YI\/T093iVHY3MI\/AAAAAAAAASk\/fJKxxkIiPkE\/s1600\/cancel.png\"\/><\/a>";
+    widget.value = widget.value + "<\/div id='mbt-stickybar'>";
+    document.getElementsByName("go")[0].disabled = false;
+document.getElementsByName("Preview")[0].disabled=false
+}</script>
+</head>
+<body>
+<div id='dhi'>
+<h2>Stickybar With Auto Scrolling Recent Post Widget Generator by Making Different</h2>
+<fieldset class='redi'><legend class='redi' align='left' style='border:1px solid #7F9DB9;padding:3px 10px;margin-left:20px;'>Settings</legend><br>
+<form action="http://www.blogger.com/add-widget" method="post" target="_blank">
+<table width="100%">
+
+<tr>
+<td width='30%'><label for='mbtblogurl'>Blog URL</label></td>
+<td width='24%'><b></b><input class='text-input' type='text' name='mbtblogurl' value='http://www.mybloggertools.org' size='30'><b></b></td>
+</tr></table>
+<table width="100%">
+<tr>
+<td width='40%'><label for='mbtMaxPosts'>Number of posts</label></td>
+<td width='60%'>&nbsp;&nbsp;<input class='text-input' type='text' name='mbtMaxPosts' value='10' size='5'></td>
+</tr>
+<td></td>
+<tr>
+<td width='60%'><label for='mbtstickyfloat'>Direction</label></td>
+
+<td width='40%'>
+&nbsp;&nbsp;<select class='select-box' id='mbtstickyfloat'  name='mbtstickyfloat'>
+<option value='left'>Left</option>
+<option value='right'>Right</option> 
+</select>
+</td>
+</tr>
+<td></td>
+<tr>
+<td width='40%'><label for='mbtScrollDelay'>ScrollDelay</label></td>
+<td width='60%'>&nbsp;&nbsp;<input class='text-input' type='text' name='mbtScrollDelay' value='175' size='5'></td>
+</tr>
+<td></td>
+<tr>
+
+<td width='60%'><label for='mbtLinkLocation'>Open Links In New Window?</label></td>
+<td width='40%'>&nbsp;&nbsp;<select class='select-box' id='mbtLinkLocation'  name='mbtLinkLocation'>
+<option value='N'>Yes</option>
+<option value='Y'>No</option> 
+</select>
+</td>
+</tr>
+<td></td>
+<tr>
+<td width='40%'><label for='mbtBulletChar'>BulletCharector</label></td>
+<td width='60%'>&nbsp;&nbsp;<input class='text-input' type='text' name='mbtBulletChar' value='>>' size='5'></td>
+</tr>
+<td></td>
+
+<tr>
+<td width='40%'><label for='mbtBulletCharcolor'>BulletCharector Color</label></td>
+<td width='60%'>#<input class='inputcolor text-input' type='text' name='mbtBulletCharcolor' value='F40045' size='5'><span
+class="colorbox"></span></td>
+</tr>
+<td></td>
+<tr>
+<td width='40%'><label for='mbtbgcolor'>Background Color</label></td>
+<td width='60%'>#<input class='inputcolor text-input' type='text' name='mbtbgcolor' value='000000' size='5'><span
+class="colorbox"></span></td>
+</tr>
+<td></td>
+<tr>
+<td width='40%'><label for='mbtlinkscolor'>Links Color</label></td>
+
+<td width='60%'>#<input class='inputcolor text-input' type='text' name='mbtlinkscolor' value='FFFFFF' size='5'><span
+class="colorbox"></span></td>
+</tr>
+</table>
+<tr>
+<td width='100%'><br>
+<div style="text-align: center;">
+<u><span style="font-size: large;"><div class="mdh2"><b>Preview</b></div></span></u></div>
+<center>
+<iframe allowtransparency="true" frameborder="0"  scrolling="no" src="about:blank" name="preview" style="
+ height:250px;width:500px;border:solid 1px #F9EAD4;padding:5px; background:#F9EAD4" frameborder="0">
+</iframe></center></td></tr>
+</fieldset>
+<center><input style="width:180px; font-weight:bold;font-size:20px; " value="Generate" onclick="javascript:makingdifferentcodegen();" type="button"><input disabled="disabled" name="Preview" value=" Preview"style="font-size: 22px; width: 175px;" type="button"  onclick="preview.document.write (document.getElementsByTagName ('TEXTAREA')[0].value); preview.document.close(); preview.focus();"/>
+<input style="width:180px; font-weight:bold;font-size:20px; " disabled="disabled" name="go" value="Add to Blogger" type="submit"><br><textarea name="widget.content" style="display:none;"></textarea><input name="infoUrl" value="http://gj37765.blogspot.com" type="hidden"><input name="logoUrl" value="" type="hidden"></form></center>
+<br>
+<center><small> Copyright &copy; 2012 All Rights Reserved by Nitin Maheta @ <a href='http://www.gj37765.blogspot.com/'>Making Different</a></small></center>
+</div>
+
+</body>
+</html>
