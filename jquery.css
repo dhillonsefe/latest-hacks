@@ -1,0 +1,30 @@
+﻿.main-nav .videos{background:#434343}
+.main-nav .videos:hover{background:#01b0ec}
+.videos:hover:before{background:#0484b0}
+.main-nav .articles{background:#ef7901}
+.main-nav .articles:hover{background:#ef7901}
+.articles:before{background:#cf7000}
+
+.main-nav .forums{background:#434343}
+.main-nav .forums:hover{background:#d54421}
+.forums:hover:before{background:#bb2904}
+
+.main-nav .snippets{background:#434343}
+.main-nav .snippets:hover{background:#98bf0d}
+.snippets:hover:before{background:#87a812}
+
+.main-nav .almanac{background:#434343}
+.main-nav .almanac:hover{background:#7449f1}
+.almanac:hover:before{background:#5531bf}
+
+.main-nav .gallery{background:#434343}
+.main-nav .gallery:hover{background:#b147a3}
+.gallery:hover:before{background:#922a84}
+
+.main-nav .downloads{background:#434343}
+.main-nav .downloads:hover{background:#f6b402}
+.downloads:hover:before{background:#d49b00}
+
+.main-nav .deals{background:#434343}
+.main-nav .deals:hover{background:#8d8d8d}
+.deals:hover:before{background:#5e5e5e}
